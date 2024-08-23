@@ -50,15 +50,15 @@ jobs:
         - language: javascript-typescript
           build-mode: none
           os: ubuntu-latest
-          tools: https://github.com/henrymercer-testing/bundle-testing/releases/download/codeql-bundle-20240812/codeql-bundle-linux64.tar.gz
+          tools: https://github.com/dsp-testing/codeql-cli-nightlies/releases/download/codeql-bundle-20240823/codeql-bundle-linux64.tar.gz
         - language: javascript-typescript
           build-mode: none
           os: macos-latest
-          tools: https://github.com/henrymercer-testing/bundle-testing/releases/download/codeql-bundle-20240812/codeql-bundle-osx64.tar.gz
+          tools: https://github.com/dsp-testing/codeql-cli-nightlies/releases/download/codeql-bundle-20240823/codeql-bundle-osx64.tar.gz
         - language: javascript-typescript
           build-mode: none
           os: windows-latest
-          tools: https://github.com/henrymercer-testing/bundle-testing/releases/download/codeql-bundle-20240812/codeql-bundle-win64.tar.gz
+          tools: https://github.com/dsp-testing/codeql-cli-nightlies/releases/download/codeql-bundle-20240823/codeql-bundle-win64.tar.gz
         # CodeQL supports the following values keywords for 'language': 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift'
         # Use `c-cpp` to analyze code written in C, C++ or both
         # Use 'java-kotlin' to analyze code written in Java, Kotlin or both
