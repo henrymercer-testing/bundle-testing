@@ -20,7 +20,7 @@ on:
     - cron: '20 16 * * 3'
 
 env:
-  CODEQL_ACTION_gzD_BUNDLE: true
+  CODEQL_ACTION_USE_ZSTD_BUNDLE: true
 
 jobs:
   analyze:
@@ -73,7 +73,7 @@ jobs:
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@henrymercer/gzd-bundles
+      uses: github/codeql-action/init@henrymercer/zstd-bundles
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
@@ -102,6 +102,6 @@ jobs:
         exit 1
 
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@henrymercer/gzd-bundles
+      uses: github/codeql-action/analyze@henrymercer/zstd-bundles
       with:
         category: "/language:${{matrix.language}}"
